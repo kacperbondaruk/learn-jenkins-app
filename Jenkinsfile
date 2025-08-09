@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Test stage"
-                    if [-f build/index.html]; then
+                    if [-f build/index.html ]; then
                         echo "File Exists"
                     else
                         echo "File Doesn't Exists"
